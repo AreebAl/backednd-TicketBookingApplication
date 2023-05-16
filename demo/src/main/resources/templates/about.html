@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+<!--<h1  ><span th:text="${name}"></span>owner of thymeleaf template </h1>
+<h1 th:text="'name of variable is'+${name}"></h1>
+<div th:with=" a=5,b=120,n=${name}">
+<h1>value of a is <span th:text="${a}"></span></h1>
+<h1 th:text="'value of b is'+${b}"></h1>-->
+
+<table>
+    <tr>
+        <th>number</th><th>name</th><th>info</th></tr>
+    <tr th:each="r:${rooms}">
+       <td th:text="${r.number}">number</td>
+        <td th:text="${r.name}">name</td>
+        <td th:text="${r.info}">info</td>
+    </tr>
+</table>
+</body>
+</html>

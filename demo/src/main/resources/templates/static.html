@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>empid</th> <th>firstname</th> <th>lastname</th> <th>position</th>
+    </tr>
+    <tr th:each="staff:${staff}">
+        <td th:text="${staff.empid}">empid</td>
+        <td th:text="${staff.firstname}">firstname</td>
+        <td th:text="${staff.lastName}">lastname</td>
+        <td th:text="${staff.position}">position</td>
+    </tr>
+</table>
+</body>
+</html>
